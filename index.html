@@ -47,7 +47,7 @@
             limit: '10',
             type: 'general',
             unit: 'day',
-            where: 'properties["mp_country_code"] == "US"' ,
+            where: '(user["$country_code"] == "US")' ,
       };
       
       var segmentContentbyInitialReferrerParams = {
