@@ -78,7 +78,7 @@
         
         //App Opened by Paid User
         
-        MP.api.segment('App Opened', 'Paid', segmentContentbyInitialReferrerParams).done(function(results) {
+        MP.api.segment('App Opened', 'properties["Yes"] - properties["No"]', segmentContentbyInitialReferrerParams).done(function(results) {
             
             ContentbyInitialReferrerBar.MPChart('setData', results);
         });
